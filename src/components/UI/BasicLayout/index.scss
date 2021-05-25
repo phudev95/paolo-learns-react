@@ -2,12 +2,31 @@
   display: flex;
 
   &--sidebar {
-    width: 300px;
+    width: 250px;
+    border-right: 2px solid grey;
     height: 100vh;
-    background-color: grey;
   }
 
-  &--sidebar {
+  &--content {
     flex-grow: 1;
+    padding: 20px;
+
+    .main-point-title {
+      font-size: 25px;
+      border-bottom: 1px solid #dedede;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    .point-title {
+      font-size: 25px;
+      font-weight: bold;
+      border-left: 3px solid #0c40d4;
+      height: 40px;
+      padding-left: 10px;
+      margin-bottom: 30px;
+      line-height: 35px;
+      color: #0c40d4;
+    }
   }
 }

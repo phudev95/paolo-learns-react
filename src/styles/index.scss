@@ -1,4 +1,7 @@
 @import './reset';
+@import './default';
+@import './common';
 
 // Components
 @import '../components/UI/BasicLayout/index.scss';
+@import '../components/UI/Sidebar/index.scss';

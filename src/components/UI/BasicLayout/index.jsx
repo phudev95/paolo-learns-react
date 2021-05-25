@@ -1,17 +1,19 @@
-import { Sidebar } from "../../Sidebar";
-// import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
+import { Sidebar } from '../Sidebar';
 
-export const BasicLayout = ({ children }) => {
+export const BasicLayout = ({ children, routes }) => {
   return (
     <div className="basic-layout">
       <div className="basic-layout--sidebar">
-        <Sidebar />
+        <Sidebar routes={routes} />
       </div>
       <div className="basic-layout--content">{children}</div>
     </div>
   );
 };
 
-// BasicLayout.propTypes = {
-//   children: PropTypes.any.isRequired
-// };
+BasicLayout.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  children: PropTypes.any.isRequired,
+  routes: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+};
