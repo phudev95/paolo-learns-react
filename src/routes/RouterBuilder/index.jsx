@@ -1,5 +1,10 @@
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from 'react-router-dom';
 
 export const RouteBuilder = ({ routes }) => {
   return (
@@ -25,11 +30,20 @@ export const RouteBuilder = ({ routes }) => {
             />
           )
         )}
+        <Redirect from="/" to={routes[0].path} />
       </Switch>
     </Router>
   );
 };
 
 RouteBuilder.propTypes = {
-  routes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  routes: PropTypes.arrayOf(
+    PropTypes.shape({
+      path: PropTypes.string.isRequired,
+      exact: PropTypes.bool,
+      component: PropTypes.element,
+      layout: PropTypes.element,
+      childRoutes: PropTypes.arrayOf(PropTypes.any),
+    })
+  ).isRequired,
 };
