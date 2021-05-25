@@ -1,2 +1,2 @@
-# paolo-learns-react
+# race-ranking-with-react
 Created with CodeSandbox
