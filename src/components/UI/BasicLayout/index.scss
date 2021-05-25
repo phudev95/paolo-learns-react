@@ -1,0 +1,13 @@
+.basic-layout {
+  display: flex;
+
+  &--sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: grey;
+  }
+
+  &--sidebar {
+    flex-grow: 1;
+  }
+}
