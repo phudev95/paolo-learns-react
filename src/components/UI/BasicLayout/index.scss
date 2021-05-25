@@ -5,11 +5,13 @@
     width: 250px;
     border-right: 2px solid grey;
     height: 100vh;
+    position: fixed;
   }
 
   &--content {
     flex-grow: 1;
     padding: 20px;
+    margin-left: 250px;
 
     .main-point-title {
       font-size: 25px;

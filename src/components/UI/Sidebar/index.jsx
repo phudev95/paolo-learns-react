@@ -5,7 +5,7 @@ export const Sidebar = ({ routes }) => {
   const location = useLocation();
 
   const checkActive = (pathname) => {
-    return location.pathname === pathname;
+    return location.pathname.startsWith(pathname);
   };
 
   const renderRoutes = (routesList, prevPath = '') => {

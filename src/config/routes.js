@@ -1,5 +1,6 @@
+import { CreateReactApp, Roadmap, UseState } from '../components/Fundamentals';
+import { JSX } from '../components/Fundamentals/JSX';
 import { BasicLayout } from '../components/UI/BasicLayout';
-import { UseState } from '../components/UseState';
 import { AdvancedScreen } from '../screens/Advanced';
 import { EcosystemScreen } from '../screens/Ecosystem';
 import { FundamentalsScreen } from '../screens/Fundamentals';
@@ -11,6 +12,21 @@ export const routes = [
     sidebarName: 'Fundamentals',
     layout: BasicLayout,
     childRoutes: [
+      {
+        path: 'roadmap',
+        component: Roadmap,
+        sidebarName: 'Roadmap',
+      },
+      {
+        path: 'create-react-app',
+        component: CreateReactApp,
+        sidebarName: 'Create React App',
+      },
+      {
+        path: 'jsx',
+        component: JSX,
+        sidebarName: 'JSX',
+      },
       {
         path: 'use-state',
         component: UseState,
