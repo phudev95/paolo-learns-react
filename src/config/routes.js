@@ -1,5 +1,6 @@
 import { CreateReactApp, Roadmap, UseState } from '../components/Fundamentals';
 import { JSX } from '../components/Fundamentals/JSX';
+import { ShowErrorMessage } from '../components/Fundamentals/ShowErrorMessage';
 import { BasicLayout } from '../components/UI/BasicLayout';
 import { AdvancedScreen } from '../screens/Advanced';
 import { EcosystemScreen } from '../screens/Ecosystem';
@@ -26,6 +27,11 @@ export const routes = [
         path: 'jsx',
         component: JSX,
         sidebarName: 'JSX',
+      },
+      {
+        path: 'show-error-message',
+        component: ShowErrorMessage,
+        sidebarName: 'Show Error Message',
       },
       {
         path: 'use-state',
