@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import { CodeHighlighter } from '../../UI/CodeHighlighter';
 import { Devider } from '../../UI/Devider';
-import code from './code';
 
 export const ShowErrorMessage = () => {
   const [errorMessage, setErrorMessage] = useState('');
@@ -47,8 +45,6 @@ export const ShowErrorMessage = () => {
           Hide Error
         </button>
       </div>
-
-      <CodeHighlighter code={code} />
     </>
   );
 };
