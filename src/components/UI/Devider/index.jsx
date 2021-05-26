@@ -4,6 +4,10 @@ export const Devider = ({ height = 40 }) => {
   return <div style={{ height }} />;
 };
 
+Devider.defaultProps = {
+  height: 40,
+};
+
 Devider.propTypes = {
-  height: PropTypes.number.isRequired,
+  height: PropTypes.number,
 };
