@@ -1,10 +1,9 @@
-import { routes } from './config/routes';
-import { RouteBuilder } from './routes/RouterBuilder';
+import ScreensRoot from './screens/Root';
 
 function App() {
   return (
     <div className="app">
-      <RouteBuilder routes={routes} />
+      <ScreensRoot />
     </div>
   );
 }
